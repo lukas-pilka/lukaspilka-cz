@@ -1,0 +1,9 @@
+node_modules
+client/node_modules
+client/build
+.idea
+config
+/.pnp
+.pnp.js
+/coverage
+.env
