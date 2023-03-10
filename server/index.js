@@ -9,11 +9,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
 
-// api
-app.get('/api', (req, res) => {
-  res.json({message:'Hello Lukas!'});
-});
-
 // elastic
 app.get('/results', (req, res) => {
   const passedSortOption = req.query.sortOption;
