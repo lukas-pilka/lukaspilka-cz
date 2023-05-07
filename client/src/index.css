@@ -32,3 +32,6 @@ pre{
   display: block;
   height: 200px;
 }
+.profileText a::after {
+    content: '';
+}

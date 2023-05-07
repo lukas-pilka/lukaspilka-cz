@@ -43,8 +43,8 @@ export function CvEvents() {
             ┌{format(new Date(),'dd/MM/yyyy HH:mm:ss')}<br/>
             │<br/>
             {!cvEvents ? "Loading..." :
-                cvEvents.map((e) => (
-                    <div key={e}>
+                cvEvents.map((e, index) => (
+                    <div key={index}>
                         ├{!e.url ? e.name : <a href={e.url} target="_blank" rel="noreferrer">{e.name}</a>}<br/>
                         │{e.type} | {e.description}<br/>
                         │{e.inProgress ? "since " : ""}{format(e.startDate, 'MM/yyyy')}
