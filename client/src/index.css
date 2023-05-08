@@ -12,11 +12,36 @@ a {
   color: #93fba3;
   text-decoration: none;
 }
-a::after {
-    content: '\00a0>\00a0';
+a:hover,
+a.active{
+  background-color: #93fba3;
+  color: #282a35;
 }
-a:hover::after {
-    content: '\00a0->';
+button{
+  color: #93fba3;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.125rem;
+  padding: 0;
+  cursor: pointer;
+}
+button:hover,
+button.active{
+  background-color: #93fba3;
+  color: #282a35;
+}
+section{
+  margin: 1.125rem 0;
+}
+section::before {
+  content: '=========== \A \A';
+  white-space: pre;
+}
+section::after {
+  content: '';
+  white-space: pre;
 }
 p{
   line-height: 1.125;
@@ -32,6 +57,19 @@ pre{
   display: block;
   height: 200px;
 }
-.profileText a::after {
-    content: '';
+.cvEvent a::after {
+    content: '\00a0>\00a0';
+}
+.cvEvent a:hover::after {
+    content: '\00a0->';
+}
+nav a::after,
+nav button::after{
+  content: ' ';
+  white-space: pre;
+}
+nav a::before,
+nav button::before{
+  content: ' ';
+  white-space: pre;
 }
