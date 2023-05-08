@@ -1,4 +1,5 @@
 /node_modules/*
+/configTemplate/*
 /client/*
 !client/build/*
 !client/build

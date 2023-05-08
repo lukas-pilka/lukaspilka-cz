@@ -1,7 +1,0 @@
-{
-  "_comment1": "This is only example of config file. For production you should complete the access data and rename folder from 'config-template' to 'config'",
-  "elastic": {
-    "cloudID": "cloudId from elastic cloud",
-    "apiKey": "Api Key from elastic cloud"
-  }
-}
