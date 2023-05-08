@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { CvEvents } from './App';
 import reportWebVitals from './reportWebVitals';
-import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 
 // Google Analytics
@@ -13,13 +12,6 @@ ReactGA.initialize(TRACKING_ID);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Helmet>
-            <title>Lukas Pilka | Digital designer </title>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-            <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144703876-4"></script>
-        </Helmet>
         <section>
             <h1>Lukas Pilka</h1>
         </section>
